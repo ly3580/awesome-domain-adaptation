@@ -172,7 +172,8 @@ This repository focuses on autonomous driving scenarios, including perception, p
 | TRANSIC | FurnitureBench → Real World    | Success Rate ↑ |       81.25 |      +11.25 | [GitHub](https://github.com/transic-robot/transic)   |
 
 ### others
-
+| Method  | Transfer Scenario              | Metric         | Performance | Improvement | Code                                                                   |
+| ------- | ------------------------------ | -------------- | ----------: | ----------: | ---------------------------------------------------------------------- |
 | PNO     | Grid-World → Moving AI 2D city | ‖ΔV‖<sub>2</sub><sup>avg</sup> ↓ |        0.12 |       -0.29 | [GitHub](https://github.com/ExistentialRobotics/PNO) |
 | X-SIM   | Human Videos → Sim. → Real     | Avg. Prog. ↑                     |        83.3 |       +43.3 | [GitHub](https://github.com/portal-cornell/X-Sim)    |
 
