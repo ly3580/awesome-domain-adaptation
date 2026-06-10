@@ -32,34 +32,41 @@ This repository focuses on autonomous driving scenarios, including perception, p
 
 ## Benchmarks and Task Suites
 
-| Dataset / Suite | Year / Source | Main Tasks | Typical Scale | Modality | Link |
-|---|---:|---|---|---|---|
-| KITTI | 2012, KIT | Stereo, Flow, 3D Det. | 150k imgs | Multi-sensor | [Link](https://www.cvlibs.net/datasets/kitti/) |
-| GTA5 | 2016, RWTH | Syn→Real Seg. | 24,966 imgs | RGB | [Link](https://github.com/sarrrrry/PyTorchDL_GTA5) |
-| Stanford Drone | 2016, Stanford CVGL | Traj. Pred. | 60 scenes | Aerial RGB | [Link](https://cvgl.stanford.edu/projects/uav_data/) |
-| Cityscapes | 2016, TU Darmstadt | Sem. Seg., Det. | 5k fine / 20k coarse imgs | RGB, stereo | [Link](https://www.cityscapes-dataset.com) |
-| Foggy Cityscapes | 2018, ETH Zürich | Seg. (fog) | 550 fine / 25k imgs | RGB + depth | [Link](https://people.ee.ethz.ch/~csakarid/SFSU_synthetic/) |
-| BDD100K | 2018, BAIR | Sem. Seg., Det. | 100k sequences | Multi-sensor | [Link](https://bair.berkeley.edu/blog/2018/05/30/bdd/) |
-| Dark Zurich | 2019, ETH Zürich | Night Seg. | 8,779 imgs | RGB | [Link](https://www.trace.ethz.ch/publications/2019/GCMA_UIoU/) |
-| nuScenes | 2020, Motional | 3D Det., Pred. | 1,000 scenes / 1.4M imgs | Full AV sensor | [Link](https://www.nuscenes.org/nuscenes) |
-| Virtual KITTI 2 | 2020, Naver Labs | Syn Multi-task | 21.26k stereo pairs | RGB, depth, flow | [Link](https://europe.naverlabs.com/proxy-virtual-worlds-vkitti-2/) |
-| WildPASS | 2021, KIT | Panor. Sem. Seg. in the Wild | 500 labeled + 2k unlabeled images | RGB-pano | [Link](https://github.com/elnino9ykl/WildPASS) |
-| DensePASS | 2021, KIT | 360° Panor. Seg. | 100 labeled / 2k unlabeled images | RGB-pano | [Link](https://github.com/chma1024/DensePASS) |
-| DDAD | 2021, TRI | Dense Depth | 200 scenes / 16,600 frames | RGB, LiDAR | [Link](https://github.com/TRI-ML/DDAD) |
-| Waymo Open Motion | 2021, Waymo | Motion Forec. | 103,354 scenes | LiDAR, RGB, HD-map | [Link](https://github.com/waymo-research/waymo-open-dataset) |
-| RCooper | 2024, AIR-THU | Coop. Percep., Det., Tracking | 50k imgs / 30k pts | RGB, LiDAR | [Link](https://github.com/AIR-THU/DAIR-RCooper) |
-| V2X-Real | 2024, UCLA | V2X Coop. Percep., 3D Det. | 171k imgs / 33k LiDAR | RGB, LiDAR | [Link](https://mobility-lab.seas.ucla.edu/v2x-real/) |
-| Multi-V2X | 2024, THU | Multi-agent V2X Percep. | 549k imgs / 146k LiDAR | RGB, LiDAR, HD-map | [Link](https://github.com/RadetzkyLi/Multi-V2X) |
-| V2X-Radar | 2024, THU | V2X 4D Radar Percep. | 40k imgs / 20k radar frames | Multi-sensor | [Link](http://openmpd.com/column/V2X-Radar) |
-| OpenAD | 2024, PKU | Open-world 3D Det. | 2k scenes / 206 classes | RGB, LiDAR | [Link](https://github.com/VDIGPKU/OpenAD) |
-| OmniHD-Scenes | 2024, Tongji | 3D Det., Occ. Pred. | 450k+ frames / 514k boxes | Multi-sensor | [Link](https://github.com/TJRadarLab/OmniHD-Scenes) |
-| UrbanV2X | 2025, PolyU | Coop. Nav., V2X Percep. | 81 seqs / 200 km+ | Multi-sensor | [Link](https://polyu-taslab.github.io/UrbanV2X/) |
-| UrbanIng-V2X | 2025, THI | Coop. Percep., Tracking, Pred. | 34 seqs / 712k inst. | Multi-sensor | [Link](https://github.com/thi-ad/UrbanIng-V2X) |
-| ADAS-TO | 2026, USF | Takeover Pred., Safety | 15.7k clips / 327 drivers | RGB, CAN | [Link](https://huggingface.co/datasets/HenryYHW/ADAS-TO) |
-| BATON | 2026, USF | Handover Pred., Takeover Pred. | 380 routes / 136.6 h | Multi-sensor | [Link](https://github.com/OpenLKA/BATON) |
-| ORAD-3D | 2026, ICT | Free-space, Occ., Planning | 350 GB / 5 tasks | RGB, LiDAR | [Link](https://github.com/chaytonmin/ORAD-3D-Dataset-For-Off-Road-AD) |
-| HetroD | 2026, NYCU | Forecast., Planning, Sim. | 65.4k traj. / 70% VRUs | Aerial RGB, HD-map | [Link](https://hetroddata.github.io/HetroD/) |
-| StyleDrive | 2026, AIR-THU | E2E Driving, Style Cond. | 30k scenes / 11 types | BEV, HD-map, traj. | [Link](https://styledrive.github.io/) |
+| Dataset / Suite   |       Year / Source | Main Tasks                     | Typical Scale                     | Modality           | Link                                                                  |
+| ----------------- | ------------------: | ------------------------------ | --------------------------------- | ------------------ | --------------------------------------------------------------------- |
+| KITTI             |           2012, KIT | Stereo, Flow, 3D Det.          | 150k imgs                         | Multi-sensor       | [Link](https://www.cvlibs.net/datasets/kitti/)                        |
+| GTA5              |          2016, RWTH | Syn→Real Seg.                  | 24,966 imgs                       | RGB                | [Link](https://github.com/sarrrrry/PyTorchDL_GTA5)                    |
+| Stanford Drone    | 2016, Stanford CVGL | Traj. Pred.                    | 60 scenes                         | Aerial RGB         | [Link](https://cvgl.stanford.edu/projects/uav_data/)                  |
+| Cityscapes        |  2016, TU Darmstadt | Sem. Seg., Det.                | 5k fine / 20k coarse imgs         | RGB, stereo        | [Link](https://www.cityscapes-dataset.com)                            |
+| Gym               |       2016+, OpenAI | RL Control                     | 1k+ official envs                 | State, action      | [Link](https://openai.com/index/openai-gym-beta/)                     |
+| ScanNet           |  2017, TUM/Stanford | 3D Recon., Seg.                | 2.5M views                        | RGB-D              | [Link](https://github.com/ScanNet/ScanNet)                            |
+| Foggy Cityscapes  |    2018, ETH Zürich | Seg. (fog)                     | 550 fine / 25k imgs               | RGB + depth        | [Link](https://people.ee.ethz.ch/~csakarid/SFSU_synthetic/)           |
+| BDD100K           |          2018, BAIR | Sem. Seg., Det.                | 100k sequences                    | Multi-sensor       | [Link](https://bair.berkeley.edu/blog/2018/05/30/bdd/)                |
+| ExDark            |           2018, USM | Low-light Det.                 | 7,363 imgs                        | RGB (dark)         | [Link](https://github.com/cs-chan/Exclusively-Dark-Image-Dataset)     |
+| Dark Zurich       |    2019, ETH Zürich | Night Seg.                     | 8,779 imgs                        | RGB                | [Link](https://www.trace.ethz.ch/publications/2019/GCMA_UIoU/)        |
+| nuScenes          |      2020, Motional | 3D Det., Pred.                 | 1,000 scenes / 1.4M imgs          | Full AV sensor     | [Link](https://www.nuscenes.org/nuscenes)                             |
+| Virtual KITTI 2   |    2020, Naver Labs | Syn Multi-task                 | 21.26k stereo pairs               | RGB, depth, flow   | [Link](https://europe.naverlabs.com/proxy-virtual-worlds-vkitti-2/)   |
+| WildPASS          |           2021, KIT | Panor. Sem. Seg. in the Wild   | 500 labeled + 2k unlabeled images | RGB-pano           | [Link](https://github.com/elnino9ykl/WildPASS)                        |
+| DensePASS         |           2021, KIT | 360° Panor. Seg.               | 100 labeled / 2k unlabeled images | RGB-pano           | [Link](https://github.com/chma1024/DensePASS)                         |
+| DDAD              |           2021, TRI | Dense Depth                    | 200 scenes / 16,600 frames        | RGB, LiDAR         | [Link](https://github.com/TRI-ML/DDAD)                                |
+| Waymo Open Motion |         2021, Waymo | Motion Forec.                  | 103,354 scenes                    | LiDAR, RGB, HD-map | [Link](https://github.com/waymo-research/waymo-open-dataset)          |
+| VOID              |          2022, UCLA | Depth Compl.                   | 56 sequences (47k frames)         | RGB-D              | [Link](https://github.com/alexklwong/void-dataset)                    |
+| Furniture-Bench   |      2023, CMU CLVR | Real Manip.                    | 219.6 hours, 5,100 demos          | RGB-D              | [Link](https://clvrai.github.io/furniture-bench/)                     |
+| Scenes100         |    2023, ETH Zürich | Sem. Seg., Det.                | 100k+ imgs / 100 scenes           | RGB-D              | [Link](https://github.com/cvlab-stonybrook/scenes100)                 |
+| RoboMIND          |          2024, USTC | Multi-embod. IL. VLA           | 479 tasks, 107k traj.             | RGB-D, proprio     | [Link](https://x-humanoid-robomind.github.io/)                        |
+| RCooper           |       2024, AIR-THU | Coop. Percep., Det., Tracking  | 50k imgs / 30k pts                | RGB, LiDAR         | [Link](https://github.com/AIR-THU/DAIR-RCooper)                       |
+| V2X-Real          |          2024, UCLA | V2X Coop. Percep., 3D Det.     | 171k imgs / 33k LiDAR             | RGB, LiDAR         | [Link](https://mobility-lab.seas.ucla.edu/v2x-real/)                  |
+| Multi-V2X         |           2024, THU | Multi-agent V2X Percep.        | 549k imgs / 146k LiDAR            | RGB, LiDAR, HD-map | [Link](https://github.com/RadetzkyLi/Multi-V2X)                       |
+| V2X-Radar         |           2024, THU | V2X 4D Radar Percep.           | 40k imgs / 20k radar frames       | Multi-sensor       | [Link](http://openmpd.com/column/V2X-Radar)                           |
+| OpenAD            |           2024, PKU | Open-world 3D Det.             | 2k scenes / 206 classes           | RGB, LiDAR         | [Link](https://github.com/VDIGPKU/OpenAD)                             |
+| OmniHD-Scenes     |        2024, Tongji | 3D Det., Occ. Pred.            | 450k+ frames / 514k boxes         | Multi-sensor       | [Link](https://github.com/TJRadarLab/OmniHD-Scenes)                   |
+| UrbanV2X          |         2025, PolyU | Coop. Nav., V2X Percep.        | 81 seqs / 200 km+                 | Multi-sensor       | [Link](https://polyu-taslab.github.io/UrbanV2X/)                      |
+| UrbanIng-V2X      |           2025, THI | Coop. Percep., Tracking, Pred. | 34 seqs / 712k inst.              | Multi-sensor       | [Link](https://github.com/thi-ad/UrbanIng-V2X)                        |
+| ADAS-TO           |           2026, USF | Takeover Pred., Safety         | 15.7k clips / 327 drivers         | RGB, CAN           | [Link](https://huggingface.co/datasets/HenryYHW/ADAS-TO)              |
+| BATON             |           2026, USF | Handover Pred., Takeover Pred. | 380 routes / 136.6 h              | Multi-sensor       | [Link](https://github.com/OpenLKA/BATON)                              |
+| ORAD-3D           |           2026, ICT | Free-space, Occ., Planning     | 350 GB / 5 tasks                  | RGB, LiDAR         | [Link](https://github.com/chaytonmin/ORAD-3D-Dataset-For-Off-Road-AD) |
+| HetroD            |          2026, NYCU | Forecast., Planning, Sim.      | 65.4k traj. / 70% VRUs            | Aerial RGB, HD-map | [Link](https://hetroddata.github.io/HetroD/)                          |
+| StyleDrive        |       2026, AIR-THU | E2E Driving, Style Cond.       | 30k scenes / 11 types             | BEV, HD-map, traj. | [Link](https://styledrive.github.io/)                                 |
 
 ---
 
