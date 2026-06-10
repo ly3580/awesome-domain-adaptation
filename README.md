@@ -76,45 +76,47 @@ This repository focuses on autonomous driving scenarios, including perception, p
 
 ### Object Detection
 
-| Method | Transfer Scenario | Metric | Performance | Improvement | Code |
-|---|---|---|---:|---:|---|
-| MemX-Former | Cityscapes → Foggy Cityscapes | mAP ↑ | 37.70 | +12.50 | [GitHub](https://github.com/Vibashan/online-da) |
-| DA-Detect | Cityscapes → Foggy Cityscapes | mAP ↑ | 42.40 | +18.93 | [GitHub](https://github.com/jinlong17/DA-Detect) |
-| Zhang et al., 2023 | Scenes100 | mAP ↑ | 70.39 | +4.65 | [GitHub](https://github.com/cvlab-stonybrook/scenes100) |
-| DA-Pro | Cityscapes → Foggy Cityscapes | mAP ↑ | 55.90 | +3.30 | [GitHub](https://github.com/Therock90421/DA-Pro) |
-| AT | Cityscapes → Foggy Cityscapes | mAP ↑ | 50.90 | +8.20 | [GitHub](https://github.com/facebookresearch/adaptive_teacher) |
-| 2PCNet | BDD100K day → night | mAP ↑ | 46.40 | +5.30 | [GitHub](https://github.com/mecarill/2pcnet) |
-| HT | Cityscapes → Foggy Cityscapes | mAP ↑ | 50.40 | +15.00 | [GitHub](https://github.com/kinredon/Harmonious-Teacher) |
-| BlenDA | Cityscapes → Foggy Cityscapes | mAP ↑ | 53.40 | +6.30 | [GitHub](https://github.com/aiiu-lab/BlenDA) |
-| DATR | Cityscapes → Foggy Cityscapes | mAP ↑ | 52.80 | +17.20 | [GitHub](https://github.com/h751410234/DATR) |
-| ALDI++ | Cityscapes → Foggy Cityscapes | mAP ↑ | 66.80 | +3.50 | [GitHub](https://github.com/justinkay/aldi) |
-| DA2OD | Cityscapes → Foggy Cityscapes | mAP ↑ | 57.30 | +5.20 | [GitHub](https://github.com/EstrellaXyu/Differential-Alignment-for-DAOD) |
-| DINO Teacher | Cityscapes → Foggy Cityscapes | mAP ↑ | 55.40 | +4.50 | [GitHub](https://github.com/TRAILab/DINO_Teacher) |
+| Method             | Transfer Scenario             | Metric | Performance | Improvement | Code                                                                     |
+| ------------------ | ----------------------------- | ------ | ----------: | ----------: | ------------------------------------------------------------------------ |
+| MemX-Former        | Cityscapes → Foggy Cityscapes | mAP ↑  |       37.70 |      +12.50 | [GitHub](https://github.com/Vibashan/online-da)                          |
+| DA-Detect          | Cityscapes → Foggy Cityscapes | mAP ↑  |       42.40 |      +18.93 | [GitHub](https://github.com/jinlong17/DA-Detect)                         |
+| Zhang et al., 2023 | Scenes100                     | mAP ↑  |       70.39 |       +4.65 | [GitHub](https://github.com/cvlab-stonybrook/scenes100)                  |
+| DA-Pro             | Cityscapes → Foggy Cityscapes | mAP ↑  |       55.90 |       +3.30 | [GitHub](https://github.com/Therock90421/DA-Pro)                         |
+| AT                 | Cityscapes → Foggy Cityscapes | mAP ↑  |       50.90 |       +8.20 | [GitHub](https://github.com/facebookresearch/adaptive_teacher)           |
+| 2PCNet             | BDD100K day → night           | mAP ↑  |       46.40 |       +5.30 | [GitHub](https://github.com/mecarill/2pcnet)                             |
+| HT                 | Cityscapes → Foggy Cityscapes | mAP ↑  |       50.40 |      +15.00 | [GitHub](https://github.com/kinredon/Harmonious-Teacher)                 |
+| DAI-Net            | COCO → ExDark                 | mAP ↑  |       78.30 |      +15.60 | [GitHub](https://github.com/ZPDu/DAI-Net)                                |
+| BlenDA             | Cityscapes → Foggy Cityscapes | mAP ↑  |       53.40 |       +6.30 | [GitHub](https://github.com/aiiu-lab/BlenDA)                             |
+| DATR               | Cityscapes → Foggy Cityscapes | mAP ↑  |       52.80 |      +17.20 | [GitHub](https://github.com/h751410234/DATR)                             |
+| ALDI++             | Cityscapes → Foggy Cityscapes | mAP ↑  |       66.80 |       +3.50 | [GitHub](https://github.com/justinkay/aldi)                              |
+| DA2OD              | Cityscapes → Foggy Cityscapes | mAP ↑  |       57.30 |       +5.20 | [GitHub](https://github.com/EstrellaXyu/Differential-Alignment-for-DAOD) |
+| DINO Teacher       | Cityscapes → Foggy Cityscapes | mAP ↑  |       55.40 |       +4.50 | [GitHub](https://github.com/TRAILab/DINO_Teacher)                        |
 
 ### Semantic Segmentation
 
-| Method | Transfer Scenario | Metric | Performance | Improvement | Code |
-|---|---|---|---:|---:|---|
-| CDAC | GTA5 → Cityscapes | mIoU ↑ | 75.30 | +28.80 | [GitHub](https://github.com/wangkaihong/CDAC) |
-| CDMA | Cityscapes → Dark Zurich | mIoU ↑ | 54.80 | +1.30 | [GitHub](https://github.com/XiaRho/CMDA) |
-| SePiCo | GTA5 → Cityscapes | mIoU ↑ | 69.70 | +1.40 | [GitHub](https://github.com/BIT-DA/SePiCo) |
-| BUS | GTA5 → Cityscapes | mIoU ↑ | 72.47 | +14.30 | [GitHub](https://github.com/KU-VGI/BUS) |
-| MIC | GTA5 → Cityscapes | mIoU ↑ | 75.90 | +7.60 | [GitHub](https://github.com/lhoyer/MIC) |
-| DTA4PASS | Cityscapes, SynPASS → DensePASS | mIoU ↑ | 57.16 | +4.77 | [GitHub](https://github.com/jingjiang02/dta4pass) |
-| FSDA | GTA5 → Cityscapes, 1-shot | mIoU ↑ | 33.80 | +12.00 | [GitHub](https://github.com/zgyang-hnu/DIP-hunnu) |
-| VFM-UDA++ | GTA5 → Cityscapes | mIoU ↑ | 79.80 | +1.40 | [GitHub](https://github.com/tue-mps/vfm-uda-plusplus) |
-| SoMA | GTAV → Cityscapes, BDD, Mapillary | mIoU ↑ | 68.27 | +1.77 | [GitHub](https://github.com/ysj9909/SoMA) |
+| Method    | Transfer Scenario                 | Metric | Performance | Improvement | Code                                                  |
+| --------- | --------------------------------- | ------ | ----------: | ----------: | ----------------------------------------------------- |
+| CDAC      | GTA5 → Cityscapes                 | mIoU ↑ |       75.30 |      +28.80 | [GitHub](https://github.com/wangkaihong/CDAC)         |
+| CDMA      | Cityscapes → Dark Zurich          | mIoU ↑ |       54.80 |       +1.30 | [GitHub](https://github.com/XiaRho/CMDA)              |
+| SePiCo    | GTA5 → Cityscapes                 | mIoU ↑ |       69.70 |       +1.40 | [GitHub](https://github.com/BIT-DA/SePiCo)            |
+| BUS       | GTA5 → Cityscapes                 | mIoU ↑ |       72.47 |      +14.30 | [GitHub](https://github.com/KU-VGI/BUS)               |
+| MIC       | GTA5 → Cityscapes                 | mIoU ↑ |       75.90 |       +7.60 | [GitHub](https://github.com/lhoyer/MIC)               |
+| DTA4PASS  | Cityscapes, SynPASS → DensePASS   | mIoU ↑ |       57.16 |       +4.77 | [GitHub](https://github.com/jingjiang02/dta4pass)     |
+| FSDA      | GTA5 → Cityscapes, 1-shot         | mIoU ↑ |       33.80 |      +12.00 | [GitHub](https://github.com/zgyang-hnu/DIP-hunnu)     |
+| VFM-UDA++ | GTA5 → Cityscapes                 | mIoU ↑ |       79.80 |       +1.40 | [GitHub](https://github.com/tue-mps/vfm-uda-plusplus) |
+| SoMA      | GTAV → Cityscapes, BDD, Mapillary | mIoU ↑ |       68.27 |       +1.77 | [GitHub](https://github.com/ysj9909/SoMA)             |
 
 ### Depth Estimation
 
-| Method | Transfer Scenario | Metric | Performance | Improvement | Code |
-|---|---|---|---:|---:|---|
-| Ada-Depth | KITTI → DDAD | δ < 1.25 ↑ | 0.867 | +0.079 | [GitHub](https://github.com/Malefikus/ada-depth) |
-| ZoeDepth | KITTI → Virtual KITTI 2 | δ < 1.25 ↑ | 0.837 | +0.008 | [GitHub](https://github.com/isl-org/ZoeDepth) |
-| ZeroDepth | Waymo et al. → KITTI | δ < 1.25 ↑ | 0.910 | +0.047 | [GitHub](https://github.com/TRI-ML/vidar) |
-| Metric3D v2 | ScanNet et al. → KITTI | δ < 1.25 ↑ | 0.975 | +0.050 | [GitHub](https://github.com/YvanYin/Metric3D) |
-| ACDepth | nuScenes day-clear → day-rain | δ < 1.25 ↑ | 0.813 | +0.003 | [GitHub](https://github.com/msscao/ACDepth) |
-| Video Depth Anything | Virtual KITTI 2, IRS → KITTI | δ < 1.25 ↑ | 0.910 | +0.033 | [GitHub](https://github.com/DepthAnything/Video-Depth-Anything) |
+| Method               | Transfer Scenario             | Metric     | Performance | Improvement | Code                                                            |
+| -------------------- | ----------------------------- | ---------- | ----------: | ----------: | --------------------------------------------------------------- |
+| Ada-Depth            | KITTI → DDAD                  | δ < 1.25 ↑ |       0.867 |      +0.079 | [GitHub](https://github.com/Malefikus/ada-depth)                |
+| ZoeDepth             | KITTI → Virtual KITTI 2       | δ < 1.25 ↑ |       0.837 |      +0.008 | [GitHub](https://github.com/isl-org/ZoeDepth)                   |
+| ZeroDepth            | Waymo et al. → KITTI          | δ < 1.25 ↑ |       0.910 |      +0.047 | [GitHub](https://github.com/TRI-ML/vidar)                       |
+| RSA                  | VOID et al. → DDAD            | δ < 1.25 ↑ |       0.768 |      +0.037 | [GitHub](https://github.com/Adonis-galaxy/RSA)                  |
+| Metric3D v2          | ScanNet et al. → KITTI        | δ < 1.25 ↑ |       0.975 |      +0.050 | [GitHub](https://github.com/YvanYin/Metric3D)                   |
+| ACDepth              | nuScenes day-clear → day-rain | δ < 1.25 ↑ |       0.813 |      +0.003 | [GitHub](https://github.com/msscao/ACDepth)                     |
+| Video Depth Anything | Virtual KITTI 2, IRS → KITTI  | δ < 1.25 ↑ |       0.910 |      +0.033 | [GitHub](https://github.com/DepthAnything/Video-Depth-Anything) |
 
 ---
 
@@ -122,36 +124,60 @@ This repository focuses on autonomous driving scenarios, including perception, p
 
 ### Behavior Prediction
 
-| Method | Transfer Scenario | Metric | Performance | Improvement | Code |
-|---|---|---|---:|---:|---|
-| T4P | INTERACTION → nuScenes | ADE/FDE ↓ | 0.54 / 1.14 | -0.51 / -1.11 | [GitHub](https://github.com/daeheepark/T4P) |
-| TrajSDE | nuScenes + WOMD → nuScenes | ADE/FDE ↓ | 0.893 / -- | -0.151 / -- | [GitHub](https://github.com/daeheepark/TrajSDE) |
-| STraj | Argoverse MIA → PIT | ADE/FDE ↓ | 1.96 / 4.45 | -0.36 / -1.01 | [GitHub](https://github.com/Zhanwei-Z/STraj) |
-| Frenet+ | Argoverse seen domains → unseen domains | ADE/FDE ↓ | 0.7882 / 1.2602 | -0.0713 / -0.1234 | [GitHub](https://github.com/XIAOYEJIAYOU/Frenet-Strategy) |
-| EP-Q | Argoverse 2 → WOMD | ADE/FDE ↓ | 0.530 / 1.150 | -- | [GitHub](https://github.com/continental/everything-polynomial) |
-| MTR-UniTraj | WOMD + Argoverse 2 + nuScenes → nuScenes | brier-minFDE ↓ | 2.27 | -0.59 | [GitHub](https://github.com/vita-epfl/UniTraj) |
+| Method             | Transfer Scenario                        | Metric         |     Performance |       Improvement | Code                                                           |
+| ------------------ | ---------------------------------------- | -------------- | --------------: | ----------------: | -------------------------------------------------------------- |
+| T4P                | INTERACTION → nuScenes                   | ADE/FDE ↓      |     0.54 / 1.14 |     -0.51 / -1.11 | [GitHub](https://github.com/daeheepark/T4P)                    |
+| SingularTrajectory | ETH → HOTEL                              | ADE/FDE ↓      |     0.29 / 0.57 |     -0.97 / -1.85 | [GitHub](https://github.com/InhwanBae/SingularTrajectory)      |
+| AdapTraj           | ETH et al. → SDD                         | ADE/FDE ↓      |     0.91 / 1.67 |     -0.04 / -0.12 | [GitHub](https://github.com/GestaltCogTeam/AdapTraj)           |
+| TrajSDE            | nuScenes + WOMD → nuScenes               | ADE/FDE ↓      |      0.893 / -- |       -0.151 / -- | [GitHub](https://github.com/daeheepark/TrajSDE)                |
+| STraj              | Argoverse MIA → PIT                      | ADE/FDE ↓      |     1.96 / 4.45 |     -0.36 / -1.01 | [GitHub](https://github.com/Zhanwei-Z/STraj)                   |
+| Frenet+            | Argoverse seen domains → unseen domains  | ADE/FDE ↓      | 0.7882 / 1.2602 | -0.0713 / -0.1234 | [GitHub](https://github.com/XIAOYEJIAYOU/Frenet-Strategy)      |
+| EP-Q               | Argoverse 2 → WOMD                       | ADE/FDE ↓      |   0.530 / 1.150 |                -- | [GitHub](https://github.com/continental/everything-polynomial) |
+| MTR-UniTraj        | WOMD + Argoverse 2 + nuScenes → nuScenes | brier-minFDE ↓ |            2.27 |             -0.59 | [GitHub](https://github.com/vita-epfl/UniTraj)                 |
+
+### Policy Transfer
+
+| Method | Transfer Scenario               | Metric   | Performance | Improvement | Code                                                      |
+| ------ | ------------------------------- | -------- | ----------: | ----------: | --------------------------------------------------------- |
+| VGDF   | halfcheetah → broken back thigh | reward ↑ |  4834 ± 250 | +3706 ± 294 | [GitHub](https://github.com/Kavka1/VGDF)                  |
+| PAR    | halfcheetah → broken back thigh | reward ↑ |  5686 ± 603 | +4558 ± 622 | [GitHub](https://github.com/dmksjfl/PAR)                  |
+| ECC    | halfcheetah → 3 legs            | reward ↑ |   1981 ± 73 |  +620 ± 190 | [GitHub](https://github.com/Ricky-Zhu/effect_consistency) |
+| xTED   | halfcheetah → 2g                | reward ↑ |  41.1 ± 2.0 | +40.6 ± 1.9 | [GitHub](https://github.com/t6-thu/xTED)                  |
 
 ### Policy Learning and Adaptation
 
-| Method | Transfer Scenario | Metric | Performance | Improvement | Code |
-|---|---|---|---:|---:|---|
-| LoRD | nuPlan Boston/Pittsburgh → Singapore | Score / Success ↑ | 0.764 | +0.062 | [GitHub](https://github.com/rst-tu-dortmund/LoRD) |
-| AnyD | Multi-city driving data → CARLA regional benchmark | Driving Score ↑ | 0.50 | +0.14 | [GitHub](https://github.com/h2xlab/anyd) |
-| PPGeo | YouTube Driving → CARLA Town05-long | Driving Score ↑ | 47.44 ± 5.63 | +6.15 | [GitHub](https://github.com/OpenDriveLab/PPGeo) |
-| ACO | YouTube Driving → CARLA IL benchmark | Success Rate ↑ | 96.0 ± 3.3 | +5.3 | [GitHub](https://github.com/metadriverse/ACO) |
+| Method | Transfer Scenario                                  | Metric            |  Performance | Improvement | Code                                              |
+| ------ | -------------------------------------------------- | ----------------- | -----------: | ----------: | ------------------------------------------------- |
+| LoRD   | nuPlan Boston/Pittsburgh → Singapore               | Score / Success ↑ |        0.764 |      +0.062 | [GitHub](https://github.com/rst-tu-dortmund/LoRD) |
+| AnyD   | Multi-city driving data → CARLA regional benchmark | Driving Score ↑   |         0.50 |       +0.14 | [GitHub](https://github.com/h2xlab/anyd)          |
+| PPGeo  | YouTube Driving → CARLA Town05-long                | Driving Score ↑   | 47.44 ± 5.63 |       +6.15 | [GitHub](https://github.com/OpenDriveLab/PPGeo)   |
+| ACO    | YouTube Driving → CARLA IL benchmark               | Success Rate ↑    |   96.0 ± 3.3 |        +5.3 | [GitHub](https://github.com/metadriverse/ACO)     |
 
 ### Traffic-Agent Modeling
 
-| Method | Transfer Scenario | Metric | Performance | Improvement | Code |
-|---|---|---|---:|---:|---|
-| SMART | nuPlan → WOMD | RMM ↑ | 0.7210 | -- | [GitHub](https://github.com/rainmaker22/SMART) |
-| CAT-K | Open-loop BC → Closed-loop WOSAC | RMM ↑ | 0.7702 | +0.0031 | [GitHub](https://github.com/NVlabs/catk) |
+| Method | Transfer Scenario                | Metric | Performance | Improvement | Code                                           |
+| ------ | -------------------------------- | ------ | ----------: | ----------: | ---------------------------------------------- |
+| SMART  | nuPlan → WOMD                    | RMM ↑  |      0.7210 |          -- | [GitHub](https://github.com/rainmaker22/SMART) |
+| CAT-K  | Open-loop BC → Closed-loop WOSAC | RMM ↑  |      0.7702 |     +0.0031 | [GitHub](https://github.com/NVlabs/catk)       |
 
 ### Trajectory Generation
 
-| Method | Transfer Scenario | Metric | Performance | Improvement | Code |
-|---|---|---|---:|---:|---|
+| Method     | Transfer Scenario      | Metric            | Performance |   Improvement | Code                                                  |
+| ---------- | ---------------------- | ----------------- | ----------: | ------------: | ----------------------------------------------------- |
 | DG-TrajGen | RobotCar → KITTI/CARLA | ADE_KITTI/CARLA ↓ | 1.70 / 0.92 | -0.43 / -0.44 | [GitHub](https://github.com/IamWangYunKai/DG-TrajGen) |
+
+### Motion Planning
+
+| Method  | Transfer Scenario              | Metric         | Performance | Improvement | Code                                                 |
+| ------- | ------------------------------ | -------------- | ----------: | ----------: | ---------------------------------------------------- |
+| XMoP    | Panda et al. (7 embodiments)   | Success Rate ↑ |        71.8 |          -- | [GitHub](https://github.com/prabinrath/xmop)         |
+| TRANSIC | FurnitureBench → Real World    | Success Rate ↑ |       81.25 |      +11.25 | [GitHub](https://github.com/transic-robot/transic)   |
+
+### others
+| Method  | Transfer Scenario              | Metric         | Performance | Improvement | Code                                                 |
+| ------- | ------------------------------ | -------------- | ----------: | ----------: | ---------------------------------------------------- |
+| PNO     | Grid-World → Moving AI 2D city | ‖ΔV‖²_avg ↓    |        0.12 |       -0.29 | [GitHub](https://github.com/ExistentialRobotics/PNO) |
+| X-SIM   | Human Videos → Sim. → Real     | Avg. Prog. ↑   |        83.3 |       +43.3 | [GitHub](https://github.com/portal-cornell/X-Sim)    |
 
 ---
 
