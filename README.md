@@ -7,28 +7,28 @@ A curated list of benchmarks, task suites, open-source implementations, and repr
 This repository focuses on autonomous driving scenarios, including perception, prediction, planning, policy learning, traffic-agent modeling, and end-to-end driving.
 
 ---
-
 ## Contents
 
-- [Benchmarks and Task Suites](#benchmarks-and-task-suites)
-- [Open-Source Implementations](#open-source-implementations)
-  - [Perception Tasks](#perception-tasks)
-    - [Object Detection](#object-detection)
-    - [Semantic Segmentation](#semantic-segmentation)
-    - [Depth Estimation](#depth-estimation)
-  - [Decision-Making Modules](#decision-making-modules)
-    - [Behavior Prediction](#behavior-prediction)
-    - [Policy Learning and Adaptation](#policy-learning-and-adaptation)
-    - [Traffic-Agent Modeling](#traffic-agent-modeling)
-    - [Trajectory Generation](#trajectory-generation)
-  - [End-to-End Driving](#end-to-end-driving)
-    - [Imitation Learning](#imitation-learning)
-    - [Reinforcement Learning](#reinforcement-learning)
-- [Notes](#notes)
-- [Contribution](#contribution)
-- [License](#license)
-
----
+* [Benchmarks and Task Suites](#benchmarks-and-task-suites)
+* [Open-Source Implementations](#open-source-implementations)
+  * [Perception Tasks](#perception-tasks)
+    * [Object Detection](#object-detection)
+    * [Semantic Segmentation](#semantic-segmentation)
+    * [Depth Estimation](#depth-estimation)
+  * [Decision-Making Modules](#decision-making-modules)
+    * [Behavior Prediction](#behavior-prediction)
+    * [Policy Transfer](#policy-transfer)
+    * [Policy Learning and Adaptation](#policy-learning-and-adaptation)
+    * [Traffic-Agent Modeling](#traffic-agent-modeling)
+    * [Trajectory Generation](#trajectory-generation)
+    * [Motion Planning](#motion-planning)
+    * [Others](#others)
+  * [End-to-End Driving](#end-to-end-driving)
+    * [Imitation Learning](#imitation-learning)
+    * [Reinforcement Learning](#reinforcement-learning)
+* [Notes](#notes)
+* [Contribution](#contribution)
+* [License](#license)
 
 ## Benchmarks and Task Suites
 
@@ -40,7 +40,7 @@ This repository focuses on autonomous driving scenarios, including perception, p
 | Cityscapes        | 2016, TU Darmstadt  | Sem. Seg., Det.                | 5k fine / 20k coarse imgs         | RGB, stereo        | [Link](https://www.cityscapes-dataset.com)                            |
 | Gym               | 2016+, OpenAI       | RL Control                     | 1k+ official envs                 | State, action      | [Link](https://openai.com/index/openai-gym-beta/)                     |
 | ScanNet           | 2017, TUM/Stanford  | 3D Recon., Seg.                | 2.5M views                        | RGB-D              | [Link](https://github.com/ScanNet/ScanNet)                            |
-| Foggy Cityscapes  | 2018, ETH Zürich    | Seg. (fog)                     | 550 fine / 25k imgs               | RGB + depth        | [Link](https://people.ee.ethz.ch/~csakarid/SFSU_synthetic/)           |
+| Foggy Cityscapes  | 2018, ETH Zürich    | Seg. (fog)                     | 550 fine / 25k imgs               | RGB + depth        | [Link](https://people.ee.ethz.ch/csakarid/SFSU_synthetic/)           |
 | BDD100K           | 2018, BAIR          | Sem. Seg., Det.                | 100k sequences                    | Multi-sensor       | [Link](https://bair.berkeley.edu/blog/2018/05/30/bdd/)                |
 | ExDark            | 2018, USM           | Low-light Det.                 | 7,363 imgs                        | RGB (dark)         | [Link](https://github.com/cs-chan/Exclusively-Dark-Image-Dataset)     |
 | Dark Zurich       | 2019, ETH Zürich    | Night Seg.                     | 8,779 imgs                        | RGB                | [Link](https://www.trace.ethz.ch/publications/2019/GCMA_UIoU/)        |
@@ -172,10 +172,9 @@ This repository focuses on autonomous driving scenarios, including perception, p
 | TRANSIC | FurnitureBench → Real World    | Success Rate ↑ |       81.25 |      +11.25 | [GitHub](https://github.com/transic-robot/transic)   |
 
 ### others
-| Method  | Transfer Scenario              | Metric         | Performance | Improvement | Code                                                 |
-| ------- | ------------------------------ | -------------- | ----------: | ----------: | ---------------------------------------------------- |
-| PNO     | Grid-World → Moving AI 2D city | ‖ΔV‖²_avg ↓    |        0.12 |       -0.29 | [GitHub](https://github.com/ExistentialRobotics/PNO) |
-| X-SIM   | Human Videos → Sim. → Real     | Avg. Prog. ↑   |        83.3 |       +43.3 | [GitHub](https://github.com/portal-cornell/X-Sim)    |
+
+| PNO     | Grid-World → Moving AI 2D city | ‖ΔV‖<sub>2</sub><sup>avg</sup> ↓ |        0.12 |       -0.29 | [GitHub](https://github.com/ExistentialRobotics/PNO) |
+| X-SIM   | Human Videos → Sim. → Real     | Avg. Prog. ↑                     |        83.3 |       +43.3 | [GitHub](https://github.com/portal-cornell/X-Sim)    |
 
 ---
 
