@@ -149,9 +149,7 @@ This repository focuses on autonomous driving scenarios, including perception, p
 | Method | Transfer Scenario                                  | Metric            |  Performance | Improvement | Code                                              |
 | ------ | -------------------------------------------------- | ----------------- | -----------: | ----------: | ------------------------------------------------- |
 | LoRD   | nuPlan Boston/Pittsburgh → Singapore               | Score / Success ↑ |        0.764 |      +0.062 | [GitHub](https://github.com/rst-tu-dortmund/LoRD) |
-| AnyD   | Multi-city driving data → CARLA regional benchmark | Driving Score ↑   |         0.50 |       +0.14 | [GitHub](https://github.com/h2xlab/anyd)          |
 | PPGeo  | YouTube Driving → CARLA Town05-long                | Driving Score ↑   | 47.44 ± 5.63 |       +6.15 | [GitHub](https://github.com/OpenDriveLab/PPGeo)   |
-| ACO    | YouTube Driving → CARLA IL benchmark               | Success Rate ↑    |   96.0 ± 3.3 |        +5.3 | [GitHub](https://github.com/metadriverse/ACO)     |
 
 ### Traffic-Agent Modeling
 
@@ -185,22 +183,28 @@ This repository focuses on autonomous driving scenarios, including perception, p
 
 ### Imitation Learning
 
-| Method | Transfer Scenario | Metric | Performance | Improvement | Code |
-|---|---|---|---:|---:|---|
-| ACO | YouTube Driving → CARLA Town02 | Success Rate ↑ | 96.0 ± 3.3 | +5.3 | [GitHub](https://github.com/metadriverse/ACO) |
-| PPGeo | YouTube Driving → CARLA Town05-long | Driving Score ↑ | 47.44 ± 5.63 | +6.15 | [GitHub](https://github.com/OpenDriveLab/PPGeo) |
-| AnyD | AV2 + nuScenes + Waymo → CARLA Town01/02/10 | Driving Score ↑ | 0.50 | +0.14 | [GitHub](https://github.com/h2xlab/anyd) |
-| KING | CARLA Town01--06 → KING | Collision Rate ↓ | 28.57 ± 0.00 | -28.57 | [GitHub](https://github.com/autonomousvision/king) |
-| CodeMerge | nuScenes → nuScenes-C | Avg. L2 Error ↓ | 0.7266 | -0.0657 | [GitHub](https://github.com/UQHTy/CodeMerge) |
-| RAP-DiffusionDrive | OpenScene raster → NAVSIM v1 | Planning Score ↑ | 89.2 | +3.2 | [GitHub](https://github.com/vita-epfl/RAP) |
+| Method             | Transfer Scenario                           | Metric           |  Performance | Improvement | Code                                                                |
+| ------------------ | ------------------------------------------- | ---------------- | -----------: | ----------: | ------------------------------------------------------------------- |
+| D3IL               | RE2 → tilted RE2                            | qualitative      |  qualitative |          -- | [GitHub](https://github.com/sunghochoi122/D3IL)                     |
+| Adapt3R            | unseen camera viewpoint                     | Success Rate ↑   |         79.4 |       +35.6 | [GitHub](https://github.com/pairlab/Adapt3R)                        |
+| LAIfO              | V-IfO problem                               | Reward ↑         |    967 ± 7.6 |  +804 ± 357 | [GitHub](https://github.com/vittoriogiammarino/ail_from_visual_obs) |
+| ACO                | YouTube Driving → CARLA Town02              | Success Rate ↑   |   96.0 ± 3.3 |        +5.3 | [GitHub](https://github.com/metadriverse/ACO)                       |
+| AnyD               | AV2 + nuScenes + Waymo → CARLA Town01/02/10 | Driving Score ↑  |         0.50 |       +0.14 | [GitHub](https://github.com/h2xlab/anyd)                            |
+| KING               | CARLA Town01--06 → KING                     | Collision Rate ↓ | 28.57 ± 0.00 |      -28.57 | [GitHub](https://github.com/autonomousvision/king)                  |
+| CodeMerge          | nuScenes → nuScenes-C                       | Avg. L2 Error ↓  |       0.7266 |     -0.0657 | [GitHub](https://github.com/UQHTy/CodeMerge)                        |
+| RAP-DiffusionDrive | OpenScene raster → NAVSIM v1                | Planning Score ↑ |         89.2 |        +3.2 | [GitHub](https://github.com/vita-epfl/RAP)                          |
 
 ### Reinforcement Learning
 
-| Method | Transfer Scenario | Metric | Performance | Improvement | Code |
-|---|---|---|---:|---:|---|
-| Sim2Seg | Unity sim. → Arroyo Seco | L2 Error ↓ | 0.287 ± 0.024 | -0.165 | [GitHub](https://github.com/rll-research/sim2seg) |
-| CAT | WOMD logs → safety-critical WOMD | Crash Rate ↓ | 28.15% ± 1.63% | -15.18% | [GitHub](https://github.com/metadriverse/cat) |
-| RAD | 3DGS train → unseen 3DGS | Collision Ratio ↓ | 0.089 | -0.140 | [GitHub](https://github.com/hustvl/RAD) |
+| Method   | Transfer Scenario                | Metric             |    Performance |   Improvement | Code                                                 |
+| -------- | -------------------------------- | ------------------ | -------------: | ------------: | ---------------------------------------------------- |
+| DORAEMON | OOD dynamics                     | Success Rate ↑     |         66.57% |        +28.8% | [GitHub](https://github.com/gabrieletiboni/doraemon) |
+| DROPO    | Hockeypuck sim2real              | Distance ↓         |            2.5 |          -4.0 | [GitHub](https://github.com/gabrieletiboni/dropo)    |
+| IGDF     | body mass shift                  | norm. Avg. score ↑ |   47.21 ± 0.19 | +10.52 ± 0.31 | [GitHub](https://github.com/BattleWen/IGDF)          |
+| CARI     | Body-Mass Shift                  | norm. return ↑     |     27.3 ± 2.3 |    +3.1 ± 4.2 | [GitHub](https://github.com/YanasGH/CDG)             |
+| Sim2Seg  | Unity sim. → Arroyo Seco         | L2 Error ↓         |  0.287 ± 0.024 |        -0.165 | [GitHub](https://github.com/rll-research/sim2seg)    |
+| CAT      | WOMD logs → safety-critical WOMD | Crash Rate ↓       | 28.15% ± 1.63% |       -15.18% | [GitHub](https://github.com/metadriverse/cat)        |
+| RAD      | 3DGS train → unseen 3DGS         | Collision Ratio ↓  |          0.089 |        -0.140 | [GitHub](https://github.com/hustvl/RAD)              |
 
 ---
 
