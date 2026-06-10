@@ -198,12 +198,12 @@ This repository focuses on autonomous driving scenarios, including perception, p
 
 | Method   | Transfer Scenario                | Metric             |    Performance |   Improvement | Code                                                 |
 | -------- | -------------------------------- | ------------------ | -------------: | ------------: | ---------------------------------------------------- |
-| DORAEMON | OOD dynamics                     | Success Rate ↑     |         66.57% |        +28.8% | [GitHub](https://github.com/gabrieletiboni/doraemon) |
+| DORAEMON | OOD dynamics                     | Success Rate ↑     |          66.57 |         +28.8 | [GitHub](https://github.com/gabrieletiboni/doraemon) |
 | DROPO    | Hockeypuck sim2real              | Distance ↓         |            2.5 |          -4.0 | [GitHub](https://github.com/gabrieletiboni/dropo)    |
 | IGDF     | body mass shift                  | norm. Avg. score ↑ |   47.21 ± 0.19 | +10.52 ± 0.31 | [GitHub](https://github.com/BattleWen/IGDF)          |
 | CARI     | Body-Mass Shift                  | norm. return ↑     |     27.3 ± 2.3 |    +3.1 ± 4.2 | [GitHub](https://github.com/YanasGH/CDG)             |
 | Sim2Seg  | Unity sim. → Arroyo Seco         | L2 Error ↓         |  0.287 ± 0.024 |        -0.165 | [GitHub](https://github.com/rll-research/sim2seg)    |
-| CAT      | WOMD logs → safety-critical WOMD | Crash Rate ↓       | 28.15% ± 1.63% |       -15.18% | [GitHub](https://github.com/metadriverse/cat)        |
+| CAT      | WOMD logs → safety-critical WOMD | Crash Rate ↓       |  28.15  ± 1.63 |        -15.18 | [GitHub](https://github.com/metadriverse/cat)        |
 | RAD      | 3DGS train → unseen 3DGS         | Collision Ratio ↓  |          0.089 |        -0.140 | [GitHub](https://github.com/hustvl/RAD)              |
 
 ---
